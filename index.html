@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/chat.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/typing.css">
+    <link rel="icon" type="image/x-icon" href="telkom.png">
+    <title>PT. Telekomunikasi Indonesia - Jakarta</title>
+</head>
+<body>
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                        <div class="chatbox__image--header">
+                            <img src="telkom.png" alt="image">
+                        </div>
+                        <div class="chatbox__content--header">
+                            <h4 class="chatbox__heading--header">Telkom Indonesia</h4>
+                            <p class="chatbox__description--header">Customer Support</p>
+                        </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
+                    <div id="chatbox">
+                            <!--<h4 id="chat-timelaps">12</h4>-->
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                            <!--<div class="messages__item messages__item--visitor">
+                                Can you let me talk to the support?
+                            </div>
+                            <div class="messages__item messages__item--operator">
+                                Sure!
+                            </div>
+                            <div class="messages__item messages__item--visitor">
+                                Need your help, I need a developer in my site.
+                            </div>
+                            <div class="messages__item messages__item--operator">
+                                Hi... What is it? I'm a front-end developer, yay!
+                            </div>
+                            <div class="messages__item messages__item--typing">
+                                <span class="messages__dot"></span>
+                                <span class="messages__dot"></span>
+                                <span class="messages__dot"></span>
+                            </div>-->
+                    </div>
+                </div>
+                <div class="chatbox__footer" id="userInput" id="chat-bar-bottom">
+                    <!--<img src="./images/icons/emojis.svg" alt="">
+                    <img src="./images/icons/microphone.svg" alt="">-->
+                    <!--<input id="textInput" type="text" placeholder="Write a message..." name="msg">-->
+                    <input id="textInput" type="text" placeholder="Write a message..." name="msg">
+                    <!--<p class="chatbox__send--footer">Send</p>-->
+                    <i id="chat-icon" style="color: white;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                    <img src="./images/icons/attachment.svg" alt="" style="width: 5%; cursor: pointer; ">
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button>button</button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/Chat.js"></script>
+    <script src="./app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="responses.js"></script>
+</body>
+</html>
